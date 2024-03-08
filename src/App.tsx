@@ -9,8 +9,10 @@ interface TeamProps {
   state: string;
 }
 
+//After importing the JSON, create a variable that is the array "teams" from the imported file (also called "teams")
 const bballTeams = teams.teams;
 
+//Team class to set up the strucutre of the team card
 class Team extends React.Component<TeamProps> {
   render() {
     const singleTeam = this.props;
@@ -26,6 +28,7 @@ class Team extends React.Component<TeamProps> {
   }
 }
 
+//Heading function
 function Title() {
   return (
     <div>
@@ -38,6 +41,7 @@ function Title() {
   );
 }
 
+//Team card function
 function TeamList() {
   return (
     <div>
@@ -48,6 +52,7 @@ function TeamList() {
   );
 }
 
+//App function
 function App() {
   return (
     <div className="App">
